@@ -31,11 +31,11 @@ server/node_modules/
 dist/
 build/
 
-# Variables de entorno (SECRETOS - NUNCA SUBIR)
+# Variables de entorno 
 .env
 server/.env
 
-# Base de datos local (No queremos subir tus gastos de prueba)
+# Base de datos local 
 database.json
 server/database.json
 
