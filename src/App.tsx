@@ -18,7 +18,7 @@ function App() {
   });
 
   
-  const API_URL = 'http://localhost:3000/transactions'; 
+  const API_URL = 'https://api-finanzas-matias.onrender.com/transactions'; 
 
   // --- CARGAR DATOS ---
   useEffect(() => {
