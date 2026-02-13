@@ -146,20 +146,20 @@ function App() {
           {editingId ? '✏️ Editando Gasto' : '➕ Agregar Nuevo Gasto'}
         </h3>
         
-        <div className="flex gap-3 mb-4">
+        <div className="flex flex-col sm:flex-row gap-3 mb-4">
           <input 
             type="text" 
             placeholder="Descripción (ej: Supermercado)" 
             value={text} 
             onChange={(e) => setText(e.target.value)} 
-            className="flex-1 p-3 rounded-lg bg-gray-900 border border-gray-600 focus:border-blue-500 outline-none"
+            className="w-full sm:flex-1 p-3 rounded-lg bg-gray-900 border border-gray-600 focus:border-blue-500 outline-none"
           />
           <input 
             type="number" 
             placeholder="Monto" 
             value={amount} 
             onChange={(e) => setAmount(e.target.value)} 
-            className="w-28 p-3 rounded-lg bg-gray-900 border border-gray-600 focus:border-blue-500 outline-none"
+            className="w-full sm:w-32 p-3 rounded-lg bg-gray-900 border border-gray-600 focus:border-blue-500 outline-none"
           />
         </div>
 
