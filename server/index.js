@@ -16,9 +16,9 @@
     // VARIABLE GLOBAL PARA SABER QUÉ USAR
     let USE_MONGO = false;
 
-    // --- DEFINIR MODELO DE MONGO (Esquema) ---
+    
     const TransactionSchema = new mongoose.Schema({
-    id: Number, // Usamos el mismo ID numérico que en local para no romper nada
+    id: Number, 
     text: String,
     amount: Number
     });
@@ -37,11 +37,11 @@
         console.log('✅ Conectado a MongoDB Atlas (Modo NUBE)');
     } catch (error) {
         console.log('❌ Error conectando a Mongo. Usando modo LOCAL (Archivo JSON).');
-        // Aquí no detenemos el servidor, simplemente USE_MONGO se queda en false
+       
     }
     };
 
-    // --- FUNCIONES AUXILIARES (ADAPTADORES) ---
+   
 
     // LEER
     const getData = async () => {
